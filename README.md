@@ -52,8 +52,8 @@ This repository uses Git LFS to manage large files. If you're working with model
     
 
 ## Project Workflow
-Training the Encoder Model: Use the EncoderModel.ipynb notebook to train the encoder model. This model will extract unique facial features for each individual.
+- Utilize the EncoderModel.ipynb notebook to train the encoder model. This model is responsible for extracting distinct facial features for each individual, leveraging triplet loss to ensure that faces of the same person are closer in the embedding space compared to those of different individuals.
 
-Face Recognition: The FaceRecognition-Flask.ipynb notebook implements the face recognition logic using the pre-trained encoder model.
-
-Web Application: The Flask-based web application enables users to interact with the face recognition system via a user-friendly interface.
+- The FaceRecognition-Flask.ipynb notebook implements the face recognition functionality using the pre-trained encoder model. It processes input images to generate facial encodings and compares them against stored encodings in the Face_database to identify known individuals based on proximity in the embedding space.
+  
+- The project utilizes Flask to establish a connection between the face recognition system and a Flutter frontend, using the ngrok API for secure tunneling. This setup allows users to interact with the face recognition system through a user-friendly Flutter interface. Users can upload images, initiate recognition processes, and receive immediate feedback on identified individuals, enabling seamless interaction with the underlying face recognition technology.
