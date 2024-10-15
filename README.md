@@ -36,6 +36,10 @@ The following libraries and frameworks are required to run the notebooks and mod
    ```bash
    pip install -r requirements.txt
 4. **Running the notebooks**: Open the Jupyter notebooks and run the code cells to execute the training and recognition tasks.
+5. **Preparation for Running FaceRecognition-Flask.ipynb**:
+   - Create a Directory: In the root directory of the project, create a folder called Face_database.
+   - Upload Images: Add images of the individuals you wish to recognize into the Face_database folder.
+
 
 ## Using Git Large File Storage (LFS)
 
