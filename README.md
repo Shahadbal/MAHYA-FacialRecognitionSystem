@@ -6,23 +6,26 @@ This repository contains code and resources for the MAHYA Facial Recognition Sys
 
 The main files and folders in this repository are as follows:
 
-- `FaceRecognition-Flask.ipynb`: This notebook implements the facial recognition system using Flutter. It includes code for detecting and identifying faces using trained models.
+1. `FaceRecognition-Flask.ipynb`:
+   - **Description**: This notebook serves as the backend for the face recognition system using Flask. It manages incoming requests from the Flutter application and processes them to identify faces.
+   - **Key Components**:
+   - **Flask Setup**: Initializes the Flask server to handle requests.
+   - **Ngrok Integration**: Uses ngrok to expose the local Flask server to the internet, enabling communication with the Flutter frontend.
+   - **Face Recognition Logic**: Implements the logic for detecting and recognizing faces based on incoming image data.
 
-- `EncoderModel.ipynb`: This notebook focuses on training the encoder model using the triplet loss function. The encoder extracts features from the face images, which are used for recognition tasks.
+2. `EncoderModel.ipynb`:
+    - **Description**: This notebook trains the encoder network that generates face encodings. The training uses a triplet loss function to optimize the encodings for better recognition accuracy.
+   - **Key Components**:
+     - **Face Detection**: Utilizes Multi-task Cascaded Convolutional Networks (MTCNN) for detecting faces during training, ensuring high accuracy.
+     - **Encoder Network**: Implements the Inception ResNet v1 architecture to create 128-dimensional face encodings from input images.
+     - **Training Process**: Describes how the encoder is trained using triplets, which consist of anchor, positive, and negative face images.
+     - **Triplet Loss Calculation**: Triplet loss is utilized during the training of the encoder.
+     - **Triplet Mining**: Identifying hard and semi-hard triplets for effective training.
 
-- `Models/`: This folder contains pre-trained model weights and other related files for facial recognition.
-  - `enc_model_weights.h5`: The encoder model's weight file used for feature extraction.
-
-## Requirements
-
-The following libraries and frameworks are required to run the notebooks and models in this project:
-
-- Python 3.6 or later
-- TensorFlow
-- Keras
-- OpenCV
-- Flask
-- Flutter (for the frontend)
+3. `Models/`: 
+  - `enc_model_weights.h5`
+  - `Inception_ResNet_v1.json`
+  - `haarcascade_frontalface_default`
 
 
 ## Setup Instructions
