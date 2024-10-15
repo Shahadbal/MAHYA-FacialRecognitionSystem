@@ -25,7 +25,6 @@ The main files and folders in this repository are as follows:
 3. `Models/`: 
   - `enc_model_weights.h5`
   - `Inception_ResNet_v1.json`
-  - `haarcascade_frontalface_default`
 
 
 ## Setup Instructions
