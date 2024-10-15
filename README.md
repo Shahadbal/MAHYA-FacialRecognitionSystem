@@ -40,10 +40,10 @@ The following libraries and frameworks are required to run the notebooks and mod
 ## Using Git Large File Storage (LFS)
 
 This repository uses Git LFS to manage large files. If you're working with model files or other large datasets, make sure to install Git LFS on your system:
-```bash
-git lfs install
-git lfs track "*.h5"
-
+    ```bash
+    git lfs install
+    git lfs track "*.h5"
+    
 
 ## Project Workflow
 Training the Encoder Model: Use the EncoderModel.ipynb notebook to train the encoder model. This model will extract unique facial features for each individual.
